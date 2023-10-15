@@ -1,0 +1,6 @@
+curl --location --request GET 'localhost:8080/getdemo?name=nahid' \
+--header 'Content-Type: application/json' \
+--data '{
+	"userId": 1,
+	"name": "Nahid"
+}'
