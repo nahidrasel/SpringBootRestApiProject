@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class WebController {
 
-  @RequestMapping("/getdemo")
+  @GetMapping(value = "/api/services")
   public DemoResponse SampleGetRequest(
       @RequestParam(value = "name", defaultValue = "HumanName") String name) {
     DemoResponse response = new DemoResponse();
@@ -17,7 +17,7 @@ public class WebController {
     return response;
   }
 
-  @RequestMapping(value = "/postdemo", method = RequestMethod.POST)
+  @PostMapping(value = "/api/services")
   public PostResponse SamplePostRequest(@RequestBody PostRequest inputPayload) {
     PostResponse response = new PostResponse();
     response.setUserId(inputPayload.getUserId() * 100);
