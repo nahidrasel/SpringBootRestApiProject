@@ -36,6 +36,7 @@ dependencies {
     implementation 'io.swagger.core.v3:swagger-core:2.2.16'
     implementation 'javax.ws.rs:javax.ws.rs-api:2.1'
     implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '3.1.4'
+    implementation 'io.rest-assured:rest-assured:5.3.2'
 }
 application {
     mainClassName = 'io.github.nahidrasel.RestAssuredAutomationPackApplication'
